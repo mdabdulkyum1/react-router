@@ -11,12 +11,13 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Users from './components/Users/Users';
 import UserD from './components/UserD/UserD';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Home/>,
-    
+    errorElement: <ErrorPage />,
     children:[
       {
         path: "/about",
